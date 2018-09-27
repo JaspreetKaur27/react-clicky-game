@@ -3,7 +3,7 @@ import React from "react";
 
 const Row = props =>
   
-  <div className={`row justify-content-center animated ${props.gameOver ? "shake" : ""}`}>
+  <div className={`row ${props.wrong ? "shake" : ""}`}>
     {props.children}
   </div>;
 
