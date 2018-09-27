@@ -111,7 +111,7 @@ class App extends Component {
           Select each card without any duplicates, you win the game!
         </Wrapper>
         <Container>
-          <Row gameOver={this.state.gameOver}>
+          <Row wrong={this.state.gameOver}>
             {this.state.cards.map(card => (
               <Column key={card.id}>
                 <Card
